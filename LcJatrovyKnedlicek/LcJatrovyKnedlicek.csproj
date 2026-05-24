@@ -5,7 +5,7 @@
         <AssemblyName>koumartin.LcJatrovyKnedlicek</AssemblyName>
         <Product>LcJatrovyKnedlicek</Product>
         <!-- Change to whatever version you're currently on. -->
-        <Version>0.1.2</Version>
+        <Version>0.1.3</Version>
     </PropertyGroup>
 
     <!-- Project Properties -->

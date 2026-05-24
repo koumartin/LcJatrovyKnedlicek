@@ -15,11 +15,9 @@ fi
 : "${MOD_NAME:?MOD_NAME is not set}"
 : "${MODMANAGER_PROFILE:?MODMANAGER_PROFILE is not set}"
 
-BUILD_CONFIGURATION="Debug"
+BUILD_CONFIGURATION="Release"
 
-if [ ! -d "$MOD_DIR/bin/Debug/netstandard2.1" ]; then
-  BUILD_CONFIGURATION="Release"
-fi
+dotnet build "$MOD_DIR" --configuration "$BUILD_CONFIGURATION"
 
 DLL_PATH="$MOD_DIR/bin/$BUILD_CONFIGURATION/netstandard2.1/$MOD_NAME.dll"
 MANIFEST_PATH="$SCRIPT_DIR/manifest.json"

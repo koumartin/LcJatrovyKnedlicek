@@ -1,3 +1,8 @@
+## [0.1.3]
+- Fixed min and max values being incorrectly swapped
+- Added configuration options for rarity and value range
+- Increased base rarity on regular and modded moons: 70 -> 80
+
 ## [0.1.2]
 - Fixed sound being played for everyone everywhere
 - Decreased rarity for regular moons: 100 -> 70

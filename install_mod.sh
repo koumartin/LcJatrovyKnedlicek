@@ -21,10 +21,6 @@ fi
 
 BUILD_CONFIGURATION="Release"
 
-if [ ! -d "$MOD_DIR/bin/Release/netstandard2.1" ]; then
-  BUILD_CONFIGURATION="Debug"
-fi
-
 dotnet build "$MOD_DIR" --configuration "$BUILD_CONFIGURATION"
 
 DLL_PATH="$MOD_DIR/bin/$BUILD_CONFIGURATION/netstandard2.1/$MOD_NAME.dll"
